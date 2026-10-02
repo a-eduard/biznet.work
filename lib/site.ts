@@ -5,20 +5,12 @@
 export const site = {
   name: "BIZNET.WORK",
   url: "https://biznet.work",
-  /** Main contact address used by every call-to-action. */
-  email: "hello@biznet.work",
-  /**
-   * Optional booking link (Calendly, Cal.com, Google Calendar…).
-   * When empty, the "Book a call" buttons fall back to an e-mail.
-   */
+  /** Calendly page: every "Book a call" button opens it inside the site. No e-mail for now. */
   bookingUrl: "https://calendly.com/serge-garden/biznet-work",
 };
 
-const mail = (subject: string) => `mailto:${site.email}?subject=${encodeURIComponent(subject)}`;
-
 export const links = {
-  call: site.bookingUrl || mail("15-minute call — biznet.work"),
-  contact: mail("Hello biznet.work"),
+  call: site.bookingUrl,
 };
 
 /**

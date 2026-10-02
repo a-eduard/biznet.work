@@ -1,7 +1,7 @@
 import { BookingInline } from "./BookingInline";
 import { IconArrow, IconCheck } from "./ui/Icons";
 import { Reveal } from "./ui/Reveal";
-import { links, site } from "@/lib/site";
+import { links } from "@/lib/site";
 
 const onTheCall = ["See exactly what buyers would get", "Get an estimate of your share", "We help you connect, if you like it"];
 
@@ -23,9 +23,6 @@ export function FinalCta() {
             <div className="cta__actions">
               <a className="btn btn--yellow btn--lg cta__book" href={links.call} data-booking>
                 Book a 15-min call <IconArrow width={18} height={18} />
-              </a>
-              <a className="cta__mail" href={links.contact}>
-                or write to {site.email}
               </a>
             </div>
           </div>

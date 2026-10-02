@@ -15,7 +15,9 @@ export function Footer() {
               {n.label}
             </a>
           ))}
-          <a href={links.contact}>Contact</a>
+          <a href={links.call} data-booking>
+            Book a call
+          </a>
         </nav>
       </div>
       <div className="container footer__base mono">

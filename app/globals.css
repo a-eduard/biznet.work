@@ -1893,18 +1893,6 @@ section > .container {
   }
 }
 
-.cta__mail {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
-  transition: color 0.25s var(--ease), border-color 0.25s var(--ease);
-}
-
-.cta__mail:hover {
-  color: var(--yellow);
-  border-color: var(--yellow);
-}
-
 .footer {
   position: relative;
   overflow: hidden;
