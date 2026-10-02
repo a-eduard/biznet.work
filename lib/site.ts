@@ -23,6 +23,7 @@ export const links = {
 
 export const nav = [
   { href: "#how", label: "How it works" },
+  { href: "#calculator", label: "Calculator" },
   { href: "#safety", label: "Is it safe?" },
   { href: "#dashboard", label: "Free dashboard" },
   { href: "#faq", label: "Questions" },

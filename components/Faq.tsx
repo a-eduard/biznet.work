@@ -5,7 +5,7 @@ import { Reveal } from "./ui/Reveal";
 const faq = [
   {
     q: "How much will we earn?",
-    a: "You get 5–30% of every sale of your data. The tidier your work (chats that lead to real tasks and results), the bigger your share. We give you an estimate on the call.",
+    a: "You get 5–30% of every sale of your data. The more of your work tools you connect, and the tidier your work, the bigger your share. Try the calculator above for a rough number; we give you an exact one on the call.",
   },
   {
     q: "Does it cost anything?",

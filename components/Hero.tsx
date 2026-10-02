@@ -33,8 +33,8 @@ export function Hero() {
               <a className="btn btn--dark btn--lg" href={links.call}>
                 Book a 15-min call <IconArrow width={18} height={18} />
               </a>
-              <a className="btn btn--ghost btn--lg" href="#how">
-                How it works <IconArrowDown width={18} height={18} />
+              <a className="btn btn--ghost btn--lg" href="#calculator">
+                Estimate your earnings <IconArrowDown width={18} height={18} />
               </a>
             </div>
             <ul className="proof">
