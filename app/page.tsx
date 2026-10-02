@@ -8,6 +8,8 @@ import { Dashboard } from "@/components/Dashboard";
 import { Faq } from "@/components/Faq";
 import { FinalCta } from "@/components/FinalCta";
 import { Footer } from "@/components/Footer";
+import { BookingDialog } from "@/components/BookingDialog";
+import { StickyCta } from "@/components/StickyCta";
 
 export default function Home() {
   return (
@@ -24,6 +26,8 @@ export default function Home() {
         <FinalCta />
       </main>
       <Footer />
+      <StickyCta />
+      <BookingDialog />
     </>
   );
 }

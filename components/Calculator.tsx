@@ -88,9 +88,17 @@ export function Calculator() {
                 ))}
               </div>
             </fieldset>
+
+            {/* Phones: the result card sits below the form, so keep a live preview pinned while answering. */}
+            <a className="calc__peek" href="#calc-result" aria-hidden tabIndex={-1}>
+              <span>
+                <b>{picked.length ? money(result.monthly) : "—"}</b> / month
+              </span>
+              <span className="calc__peekShare">{picked.length ? `${Math.round(result.share * 100)}% share` : "Pick a tool"} ↓</span>
+            </a>
           </div>
 
-          <div className="calc__result" aria-live="polite">
+          <div className="calc__result" id="calc-result" aria-live="polite">
             {picked.length === 0 ? (
               <p className="calc__empty">Pick at least one tool your team uses to see an estimate.</p>
             ) : (
@@ -124,7 +132,7 @@ export function Calculator() {
                   </p>
                 )}
 
-                <a className="btn btn--yellow btn--lg calc__cta" href={links.call}>
+                <a className="btn btn--yellow btn--lg calc__cta" href={links.call} data-booking>
                   Get your exact number <IconArrow width={18} height={18} />
                 </a>
               </>

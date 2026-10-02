@@ -30,7 +30,7 @@ export function Hero() {
               private, and <strong>pay you a share of every sale.</strong>
             </p>
             <div className="hero__ctas">
-              <a className="btn btn--dark btn--lg" href={links.call}>
+              <a className="btn btn--dark btn--lg" href={links.call} data-booking>
                 Book a 15-min call <IconArrow width={18} height={18} />
               </a>
               <a className="btn btn--ghost btn--lg" href="#calculator">

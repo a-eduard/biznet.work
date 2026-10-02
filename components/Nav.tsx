@@ -53,7 +53,7 @@ export function Nav() {
             </a>
           ))}
         </nav>
-        <a className="btn btn--dark btn--sm nav__cta" href={links.call}>
+        <a className="btn btn--dark btn--sm nav__cta" href={links.call} data-booking>
           Book a call <IconArrow width={16} height={16} />
         </a>
         <button
@@ -73,7 +73,7 @@ export function Nav() {
               {item.label}
             </a>
           ))}
-          <a className="btn btn--dark" href={links.call} onClick={() => setOpen(false)}>
+          <a className="btn btn--dark" href={links.call} data-booking onClick={() => setOpen(false)}>
             Book a 15-min call <IconArrow width={18} height={18} />
           </a>
         </div>
