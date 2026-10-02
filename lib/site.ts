@@ -4,32 +4,26 @@
  */
 export const site = {
   name: "BIZNET.WORK",
-  product: "CorpTwin",
-  tagline: "Enterprise 5.0 Data Infrastructure",
   url: "https://biznet.work",
   /** Main contact address used by every call-to-action. */
   email: "hello@biznet.work",
   /**
    * Optional booking link (Calendly, Cal.com, Google Calendar…).
-   * When empty, the "Book a demo" buttons fall back to an e-mail.
+   * When empty, the "Book a call" buttons fall back to an e-mail.
    */
   bookingUrl: "",
 };
 
-const mail = (subject: string) =>
-  `mailto:${site.email}?subject=${encodeURIComponent(subject)}`;
+const mail = (subject: string) => `mailto:${site.email}?subject=${encodeURIComponent(subject)}`;
 
 export const links = {
-  demo: site.bookingUrl || mail("15-min technical demo — biznet.work"),
-  sampleGraph: mail("Sample causal graph request — AI lab"),
-  deck: mail("Investor deck request — biznet.work"),
+  call: site.bookingUrl || mail("15-minute call — biznet.work"),
   contact: mail("Hello biznet.work"),
 };
 
 export const nav = [
-  { href: "#problem", label: "Problem" },
   { href: "#how", label: "How it works" },
-  { href: "#value", label: "Value" },
-  { href: "#security", label: "Security" },
-  { href: "#investors", label: "Investors" },
+  { href: "#safety", label: "Is it safe?" },
+  { href: "#dashboard", label: "Free dashboard" },
+  { href: "#faq", label: "Questions" },
 ];

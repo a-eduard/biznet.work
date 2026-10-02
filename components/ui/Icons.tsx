@@ -57,26 +57,6 @@ export const IconShield = (p: P) => (
     <path d="M8.5 12l2.5 2.5 4.5-5" />
   </svg>
 );
-export const IconLock = (p: P) => (
-  <svg {...base(p)}>
-    <rect x="5" y="10" width="14" height="10" />
-    <path d="M8 10V7a4 4 0 018 0v3" />
-  </svg>
-);
-export const IconGraph = (p: P) => (
-  <svg {...base(p)}>
-    <rect x="3" y="3" width="6" height="5" />
-    <rect x="15" y="9.5" width="6" height="5" />
-    <rect x="3" y="16" width="6" height="5" />
-    <path d="M9 5.5h3v6.5h3M9 18.5h3V12" />
-  </svg>
-);
-export const IconStream = (p: P) => (
-  <svg {...base(p)}>
-    <path d="M3 7h12M3 12h18M3 17h9" />
-    <path d="M18 4l3 3-3 3" />
-  </svg>
-);
 export const IconCoin = (p: P) => (
   <svg {...base(p)}>
     <circle cx="12" cy="12" r="8.5" />
@@ -88,21 +68,10 @@ export const IconPlug = (p: P) => (
     <path d="M9 3v5M15 3v5M6 8h12v4a6 6 0 01-12 0V8zM12 18v3" />
   </svg>
 );
-export const IconPulse = (p: P) => (
-  <svg {...base(p)}>
-    <path d="M3 12h4l2-6 4 12 2-6h6" />
-  </svg>
-);
 export const IconEye = (p: P) => (
   <svg {...base(p)}>
     <path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z" />
     <circle cx="12" cy="12" r="3" />
-  </svg>
-);
-export const IconLayers = (p: P) => (
-  <svg {...base(p)}>
-    <path d="M12 3l9 5-9 5-9-5 9-5z" />
-    <path d="M3 13l9 5 9-5" />
   </svg>
 );
 export const IconCheck = (p: P) => (
@@ -115,14 +84,27 @@ export const IconX = (p: P) => (
     <path d="M6 6l12 12M18 6L6 18" />
   </svg>
 );
-export const IconClock = (p: P) => (
+export const IconPlus = (p: P) => (
   <svg {...base(p)}>
-    <circle cx="12" cy="12" r="8.5" />
-    <path d="M12 7v5l3 2" />
+    <path d="M12 5v14M5 12h14" />
   </svg>
 );
 export const IconMenu = (p: P) => (
   <svg {...base(p)}>
     <path d="M4 7h16M4 12h16M4 17h16" />
+  </svg>
+);
+export const IconCalendar = (p: P) => (
+  <svg {...base(p)}>
+    <rect x="4" y="5.5" width="16" height="14.5" />
+    <path d="M4 10h16M8.5 3v4.5M15.5 3v4.5M8 14h3" />
+  </svg>
+);
+/** A chip: stands for "AI" without the robot clichés. */
+export const IconChip = (p: P) => (
+  <svg {...base(p)}>
+    <rect x="6.5" y="6.5" width="11" height="11" />
+    <rect x="10" y="10" width="4" height="4" />
+    <path d="M9.5 3v3.5M14.5 3v3.5M9.5 17.5V21M14.5 17.5V21M3 9.5h3.5M3 14.5h3.5M17.5 9.5H21M17.5 14.5H21" />
   </svg>
 );

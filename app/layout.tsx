@@ -17,9 +17,9 @@ const mono = localFont({
   display: "swap",
 });
 
-const title = "BIZNET.WORK — The data bridge between real business and frontier AI";
+const title = "BIZNET.WORK — Get paid for the work your team already does";
 const description =
-  "biznet.work turns everyday business work into clean, anonymized causal graphs for frontier AI labs. Businesses earn a revenue share and get free process analytics.";
+  "AI companies pay for real examples of how businesses get work done. We collect them from your work apps, remove everything private, and pay you 5–30% of every sale. Free to join.";
 
 // Absolute base for social preview images. On Vercel the production domain is picked up automatically;
 // set NEXT_PUBLIC_SITE_URL to override (e.g. https://biznet.work).
@@ -32,7 +32,6 @@ export const metadata: Metadata = {
   title,
   description,
   applicationName: "BIZNET.WORK",
-  keywords: ["Data-as-a-Service", "reasoning data", "AI training data", "causal graphs", "process mining", "corporate digital twin", "PII"],
   openGraph: {
     title,
     description,
