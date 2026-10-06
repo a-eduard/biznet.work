@@ -7,12 +7,12 @@ import { Reveal } from "./ui/Reveal";
 import { estimate, money, niches, shareFor, TEAM_MAX, TEAM_MIN, tools, type NicheId, type ToolId } from "@/lib/calculator";
 import { links } from "@/lib/site";
 
-/** The slider is stretched at the small end: most visitors run teams of 2–30 people. */
+/** The slider is stretched at the small end: most visitors run teams of 20–60 people. */
 const toTeam = (pos: number) => Math.round(TEAM_MIN + Math.pow(pos / 100, 2) * (TEAM_MAX - TEAM_MIN));
 const toPos = (team: number) => Math.sqrt((team - TEAM_MIN) / (TEAM_MAX - TEAM_MIN)) * 100;
 
 export function Calculator() {
-  const [team, setTeam] = useState(10);
+  const [team, setTeam] = useState(TEAM_MIN);
   const [picked, setPicked] = useState<ToolId[]>(["chat", "tasks", "calls"]);
   const [niche, setNiche] = useState<NicheId>("office");
 

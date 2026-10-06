@@ -38,7 +38,7 @@ export const niches = [
 ] as const;
 export type NicheId = (typeof niches)[number]["id"];
 
-export const TEAM_MIN = 1;
+export const TEAM_MIN = 20;
 export const TEAM_MAX = 250;
 
 export function shareFor(toolCount: number) {
